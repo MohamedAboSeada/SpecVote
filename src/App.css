@@ -59,6 +59,7 @@ select {
   width: 100%;
   border: none;
   outline: none;
+  background-color: transparent;
   padding: 10px 0;
   font-family: inherit;
   font-size: 1.2rem;
