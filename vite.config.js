@@ -5,5 +5,5 @@ import react from '@vitejs/plugin-react';
 export default defineConfig({
   plugins: [react()],
   envPrefix: 'APP_',
-  base: '/ProjectSpecs/',
+  base: '/SpecVote/',
 });
