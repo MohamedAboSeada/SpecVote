@@ -72,7 +72,7 @@ function SpecsProvider({ children }) {
 
   return (
     <specsContext.Provider
-      value={{ specs, addSpec, editSpec, removeSpec, loading, message }}
+      value={{ specs, addSpec, editSpec, removeSpec,getSpecs, loading, message }}
     >
       {children}
     </specsContext.Provider>

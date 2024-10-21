@@ -1,13 +1,16 @@
 import React from 'react';
 import Spec from './Spec';
 import { useSpecs } from './SpecsContext';
-import { Loader } from 'react-feather';
+import { Loader,RefreshCw } from 'react-feather';
 
 function Specs() {
-  let { specs, removeSpec, loading } = useSpecs();
+  let { specs, removeSpec,getSpecs, loading } = useSpecs();
   return (
     <div className="specs">
-      <h2>مقترحات اخرى</h2>
+      <div style={{display: 'flex',alignItems:'center',justifyContent:'space-between'}}>
+        <h2>مقترحات الاعضاء</h2>
+        <button onClick={getSpecs} style={{padding: '0',width:'36px',borderRadius: '50%',height: '36px',backgroundColor: 'white',display:'grid',placeItems:'center'}}><RefreshCw size={16}/></button>
+      </div>
       {loading ? (
         <p className="loading">
           <Loader size={20} /> يتم التحديث
