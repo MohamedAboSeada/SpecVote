@@ -17,6 +17,7 @@ body {
 @media (max-width: 600px) {
   .container {
     width: 100%;
+    border: none;
   }
 }
 
@@ -132,8 +133,9 @@ select {
 }
 .msg {
   position: fixed;
-  bottom: 20px;
+  top: 20px;
   left: 20px;
+  width: 200px;
   background-color: green;
   padding: 20px 0;
   font-size: 1.2rem;
